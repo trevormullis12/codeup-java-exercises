@@ -1,9 +1,12 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        for(int i = 5; i <= 15; i++)
+        for(int i = 0; i <= 100; i++) {
             System.out.print(i + " ");
-        System.out.print("\n");
-        for(long i = 2; i < 1000000; i *= i)
-            System.out.println(i);
+            if(i % 3 == 0)
+                System.out.print("Fizz");
+            if(i % 5 == 0)
+                System.out.print("Buzz");
+            System.out.println("");
+        }
     }
 }
