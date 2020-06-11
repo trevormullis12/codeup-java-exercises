@@ -30,7 +30,7 @@ public class Input {
             return getInt(min, max);
         else return num;
     }
-    double getDouble() {
+    public double getDouble() {
         return scanner.nextDouble();
     }
     double getDouble(double min, double max) {
