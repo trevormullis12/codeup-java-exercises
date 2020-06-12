@@ -20,7 +20,7 @@ public class Input {
         }
     }
 
-    int getInt() {
+    public int getInt() {
         return scanner.nextInt();
     }
     int getInt(int min, int max) {
