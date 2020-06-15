@@ -25,13 +25,21 @@ public class Vehicle {
     public Vehicle(){}
 
     public Vehicle(boolean isOperable, int passengerCapacity, String powerSource) {
-        setOperable(isOperable);
-        setCapacity(passengerCapacity);
-        setPower(powerSource);
+        this.isOperable = isOperable;
+        this.passengerCapacity = passengerCapacity;
+        this.powerSource = powerSource;
     }
 
+    @Override
     public String toString() {
-        return this.isOperable + "\n" + this.passengerCapacity + "\n" + this.powerSource + "\n";
+        return "Vehicle{" +
+                "Operable=" + this.getOperable() +
+                ", passengerCapacity=" + this.getCapacity() +
+                ", powerSource=" + this.getPower() + "}\n";
+    }
+
+    public void turnOn() {
+        System.out.println("Vehicle is turning on...");
     }
 
 }
