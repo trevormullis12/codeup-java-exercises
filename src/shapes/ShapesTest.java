@@ -8,13 +8,13 @@ public class ShapesTest {
 //        System.out.println(box1.getArea());
 //        System.out.println(box2.getPerimeter());
 //        System.out.println(box2.getArea());
-        Mesurable myShape = new Rectangle(4, 5);
-        System.out.println(myShape.getArea());
-        System.out.println(myShape.getPerimeter());
-
         Mesurable myShape = new Square(4);
         System.out.println(myShape.getArea());
         System.out.println(myShape.getPerimeter());
+
+//        Mesurable myShape = new Square(4);
+//        System.out.println(myShape.getArea());
+//        System.out.println(myShape.getPerimeter());
 
     }
 
