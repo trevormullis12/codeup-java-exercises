@@ -1,4 +1,4 @@
-public class CoffeeGrinder {
+public class CoffeeGrinder extends Appliance{
     @Override
     public void makeSound() {
         System.out.println("*chopping*");
