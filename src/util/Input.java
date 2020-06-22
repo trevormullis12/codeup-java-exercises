@@ -21,7 +21,13 @@ public class Input {
     }
 
     public int getInt() {
-        return scanner.nextInt();
+        try {
+            return Integer.valueOf(getString());
+        }
+        catch (Exception e){
+            System.out.println(e + " is not a valid integer");
+        }
+        return 0;
     }
     int getInt(int min, int max) {
         System.out.println("Enter an integer between " + min + " and " + max);
@@ -31,7 +37,13 @@ public class Input {
         else return num;
     }
     public double getDouble() {
-        return scanner.nextDouble();
+        try {
+            return Double.valueOf(getString());
+        }
+        catch (Exception e){
+            System.out.println(e + " is not a valid double");
+        }
+        return 0;
     }
     double getDouble(double min, double max) {
         System.out.println("Enter a double between " + min + " and " + max);
